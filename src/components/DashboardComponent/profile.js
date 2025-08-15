@@ -106,7 +106,7 @@ const Profile = () => {
 
   const getUserData = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/login/sucess", {
+      const response = await axios.get("https://node-server-zc4m.onrender.com/login/sucess", {
         withCredentials: true,
       });
       const user = response.data.user;

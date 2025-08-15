@@ -9,7 +9,7 @@ const Notification = () => {
 
   const fetchNotifications = async () => {
     try {
-      const res = await axios.get('http://localhost:3001/notifications', { withCredentials: true });
+      const res = await axios.get('https://node-server-zc4m.onrender.com/notifications', { withCredentials: true });
       setNotifications(res.data);
     } catch (err) {
       console.error("Error fetching notifications", err);
