@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://node-server-zc4m.onrender.com/signup", form);
+      const response = await axios.post("https://nodeserver-omega.vercel.app/signup", form);
       alert(response.data.message);
     } catch (error) {
       alert("Signup failed");

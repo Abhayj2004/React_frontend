@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 const Login = () => {
   const loginWithGoogle = () => {
-    window.open("https://node-server-zc4m.onrender.com/auth/google/callback", "_self");
+    window.open("https://nodeserver-omega.vercel.app/auth/google/callback", "_self");
   };
 
   return (
