@@ -1,0 +1,109 @@
+.leftbar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(to bottom, #d4145a, #fbb03b);
+  padding: 30px 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+/* Toggle button (for small screens) */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #d4145a;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.leftbar h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.leftbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leftbar ul li {
+  margin: 15px 0;
+  padding: 10px 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.leftbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  display: block;
+}
+
+.leftbar ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leftbar ul li a.active {
+  background-color: #fff;
+  color: #d4145a;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+/* 🔁 Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .leftbar-container {
+    transform: translateX(-100%);
+  }
+
+  .leftbar-container.show {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .rightbar-container {
+    margin-left: 0;
+  }
+
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Toggle button styling */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #d4145a;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  z-index: 1000;
+  cursor: pointer;
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.help-container {
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+}
+
+.help-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #34495e;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.help-icon-main {
+  font-size: 2rem;
+  color: #2980b9;
+  margin-right: 10px;
+}
+
+.help-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.help-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.help-card {
+  background: #fff;
+  padding: 30px 25px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.help-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  background: #f0faff;
+}
+
+.help-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.help-icon.book {
+  color: #3498db;
+}
+
+.help-icon.email {
+  color: #e67e22;
+}
+
+.help-icon.phone {
+  color: #27ae60;
+}
+
+.faq-section {
+  margin-top: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.faq-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.faq-section li {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.faq-section li:hover {
+  color: #3498db;
+}
+
+.faq-section li svg {
+  margin-right: 10px;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

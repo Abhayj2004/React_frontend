@@ -1,0 +1,71 @@
+.settings-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.settings-container h2 {
+  font-size: 20px;
+  margin: 30px 0 15px;
+  color: #d4145a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.setting-section {
+  margin-bottom: 20px;
+}
+
+.setting-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.setting-section input,
+.setting-section select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.setting-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.setting-toggle label {
+  font-weight: 500;
+}
+
+.danger-zone {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.delete-btn {
+  background-color: #d4145a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #a40f45;
+}

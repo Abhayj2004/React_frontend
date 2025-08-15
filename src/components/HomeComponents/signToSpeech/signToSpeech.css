@@ -1,0 +1,85 @@
+/* sign.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffbe6;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #f1c40f;
+  text-shadow: 2px 2px 0 #444;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  border: 4px solid #f39c12;
+  border-radius: 12px;
+  width: 640px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.video-container img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  margin: 12px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #f39c12;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+}
+
+.text-display {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff9db;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-display h3,
+.text-display h4,
+.text-display h5 {
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.tts-buttons {
+  margin-top: 25px;
+}
+
+.tts-buttons h4 {
+  margin-bottom: 15px;
+  color: #d35400;
+}
+
+.tts-buttons button {
+  margin: 5px;
+}

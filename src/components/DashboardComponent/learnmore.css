@@ -1,0 +1,114 @@
+/* src/pages/Pricing.css */
+.pricing-container {
+  background: linear-gradient(120deg, #fffbe6, #fff8dc);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pricing-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #444;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-color: #fff;
+  border: 3px solid;
+  border-radius: 12px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.icon-container {
+  font-size: 40px;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 10px;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.tick-icon {
+  margin-right: 10px;
+  color: green;
+}
+
+.subscribe-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

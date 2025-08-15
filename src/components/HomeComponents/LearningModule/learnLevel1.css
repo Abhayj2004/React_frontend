@@ -1,0 +1,121 @@
+/* Global styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* Layout */
+.learning-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .learning-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* Left Panel (Preview Box) */
+.left-panel {
+  flex: 1;
+  position: sticky;
+  top: 30px;
+  align-self: flex-start;
+}
+
+.preview-card {
+  background: #1e2a38;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #4dd0e1;
+}
+
+.preview-card h2 {
+  color: #4dd0e1;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.preview-card h3 {
+  color: #ffeb3b;
+  margin-bottom: 20px;
+}
+
+.image-box {
+  background: #fff;
+  border-radius: 12px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-box img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Right Panel (List of Letters) */
+.right-panel {
+  flex: 2;
+  background: #f9f9f9;
+  color: #333;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 85vh;
+}
+
+.right-panel h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0f2027;
+}
+
+/* Grid */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+/* Letter Card */
+.letter-card {
+  background: #e1f5fe;
+  border: 2px solid #29b6f6;
+  border-radius: 10px;
+  padding: 20px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.letter-card:hover {
+  background: #81d4fa;
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 123, 255, 0.3);
+}
+
+.letter-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0d47a1;
+}
+
+.letter-footer {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #01579b;
+  background: #b3e5fc;
+  border-radius: 8px;
+  padding: 6px 0;
+  margin-top: 10px;
+}

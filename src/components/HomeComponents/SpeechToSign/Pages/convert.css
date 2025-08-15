@@ -1,0 +1,115 @@
+.convert-container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background:linear-gradient(to right, #fceabb, #f8b500);
+  min-height: 100vh;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.text-controls {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-controls label {
+  font-weight: 600;
+  margin: 10px 0 5px;
+  display: block;
+  color: #333;
+}
+
+.text-controls textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ffc107;
+  background: #fffbe6;
+  resize: none;
+}
+
+.text-controls button {
+  background-color: #ffc107;
+  color: #212121;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text-controls button:hover {
+  background-color: #ffa000;
+  color: #fff;
+}
+
+.btn-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.render-box {
+  width: 520px;
+  height: 520px;
+  background: #fffbe6;
+  border: 2px solid #ffeb3b;
+  border-radius: 8px;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-bar {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-section {
+  text-align: center;
+}
+
+.avatar-section p {
+  font-weight: bold;
+  color: #444;
+}
+
+.avatar-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.avatar-row img {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.avatar-row img:hover {
+  border-color: #ff9800;
+  transform: scale(1.05);
+}
+
+.avatar-section small {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+}

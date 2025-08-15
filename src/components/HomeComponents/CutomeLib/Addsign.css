@@ -1,0 +1,95 @@
+.sign-capture-container {
+  background: linear-gradient(to right, #fffbd5, #fceabb);
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  text-align: center;
+  color: #333;
+}
+
+.sign-capture-container h1 {
+  font-size: 2.5rem;
+  color: #ffbb00;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+.sign-form {
+  background-color: #fffbe6;
+  border-radius: 12px;
+  padding: 30px;
+  display: inline-block;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.sign-form:hover {
+  transform: translateY(-4px);
+}
+
+.sign-form input {
+  padding: 12px;
+  margin: 12px 10px;
+  width: 260px;
+  border: 2px solid #f1c40f;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.sign-form input:focus {
+  border-color: #f39c12;
+  outline: none;
+}
+
+.sign-form button {
+  margin-top: 20px;
+  background-color: #f1c40f;
+  border: none;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sign-form button:hover {
+  background-color: #e2b607;
+  transform: scale(1.05);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+.live-preview {
+  margin-top: 40px;
+  animation: fadeIn 1s ease-in;
+}
+
+.live-preview img {
+  border: 6px solid #f1c40f;
+  border-radius: 12px;
+  max-width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
