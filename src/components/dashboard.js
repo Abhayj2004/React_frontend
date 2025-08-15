@@ -74,6 +74,7 @@ const Dashboard = () => {
           <Route path="notifications" element={<Notification />} />
           <Route path="setting" element={<Settings/>} />
           <Route path="help" element={<Help />} />
+          <Route path="help" element={<Help />} />
       
   
       
