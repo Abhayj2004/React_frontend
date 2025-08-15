@@ -33,7 +33,7 @@ const plans = [
 const subscribeToPlan = async (email, plan) => {
     console.log("Subscribing user:", email, "to plan:", plan);
   try {
-    const res = await axios.post('http://localhost:3001/subscribe', { email, plan });
+    const res = await axios.post('https://node-server-zc4m.onrender.com/subscribe', { email, plan });
     return res.data;
   } catch (error) {
     console.error(error);

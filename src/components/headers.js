@@ -13,7 +13,7 @@ const Headers = () => {
 
   const getUserData = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/login/sucess", { withCredentials: true });
+      const response = await axios.get("https://node-server-zc4m.onrender.com/login/sucess", { withCredentials: true });
       setuserdata(response.data.user);
     } catch (error) {
       console.error("Error fetching user data:", error);
@@ -21,7 +21,7 @@ const Headers = () => {
   };
 
   const logout = () => {
-    window.open("http://localhost:3001/logout", "_self");
+    window.open("https://node-server-zc4m.onrender.com/logout", "_self");
   };
 
   useEffect(() => {

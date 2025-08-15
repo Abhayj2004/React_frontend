@@ -30,7 +30,7 @@ const Dashboard = () => {
 
   const getUserData = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/login/sucess", { withCredentials: true });
+      const response = await axios.get("https://node-server-zc4m.onrender.com/login/sucess", { withCredentials: true });
       console.log(response.data.user);
     } catch (error) {
       navigate("/login");
